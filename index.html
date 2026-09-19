@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE 5234 Lab 3</title>
+    <style>body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#1f2937}main{max-width:680px;margin:15vh auto;padding:3rem;text-align:center;background:#fff;border-radius:16px;box-shadow:0 8px 28px rgba(0,0,0,.1)}h1{margin:0 0 1rem;color:#ea580c}p{margin:0;line-height:1.6}</style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script>
+      const app = React.createElement('main', null,
+        React.createElement('h1', null, 'Hello World'),
+        React.createElement('p', null, 'CSE 5234 Lab 3 - React app deployed with AWS Amplify.')
+      );
+      ReactDOM.createRoot(document.getElementById('root')).render(app);
+    </script>
   </body>
 </html>
