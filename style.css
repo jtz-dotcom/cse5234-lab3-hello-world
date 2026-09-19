@@ -1,0 +1,5 @@
+:root { font-family: Arial, sans-serif; color: #1f2937; background: #f5f7fb; }
+body { margin: 0; min-width: 320px; }
+main { max-width: 680px; margin: 15vh auto; padding: 3rem; text-align: center; background: white; border-radius: 16px; box-shadow: 0 8px 28px rgba(0,0,0,.10); }
+h1 { margin: 0 0 1rem; color: #ea580c; }
+p { margin: 0; line-height: 1.6; }
