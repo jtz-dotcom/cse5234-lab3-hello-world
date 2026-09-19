@@ -3,14 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - echo "No package install needed"
     build:
       commands:
-        - npm run build
+        - mkdir -p dist && cp index.html dist/index.html
   artifacts:
     baseDirectory: dist
     files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
+      - "**/*"
